@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subdomain Takeovered </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .takeover-message {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 5vw;
+            color: #39FF14; /* Venom green */
+            text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #39FF14;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% {
+                opacity: 0.8;
+            }
+            50% {
+                opacity: 1;
+                text-shadow: 0 0 20px #39FF14, 0 0 40px #39FF14, 0 0 60px #39FF14;
+            }
+            100% {
+                opacity: 0.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="takeover-message">
+        Subdomain Takeover
+    </div>
+    
+</body>
+</html>
